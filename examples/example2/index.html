@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+  <script src="http://code.angularjs.org/1.2.2/angular.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <script src="src/sfMultiselect.js"></script>
+</head>
+
+<body ng-app="demoApp" ng-controller="MainCtrl">
+  <h1>yello</h1>
+
+  <sf-multiselect ng-model="selectedItems" default-text="select ISOs" text-field="name" value-field="idx" items="myItems"></sf-multiselect>
+  {{selectedItems}}
+</body>
+
+</html>
